@@ -51,7 +51,7 @@ def reset():
         seconds=0
 
 window=Tk()
-window.geometry('175x100')
+window.geometry('250x100')
 window.title('stopwatch')
 l=Label(window,text="00:00:00",font=('Arial bold',20))
 l.pack()
