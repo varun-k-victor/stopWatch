@@ -4,6 +4,7 @@ running=0
 seconds=0
 minutes=0
 hours=0
+l=0
 
 def start():
     global running
@@ -50,15 +51,20 @@ def reset():
         minutes=0
         seconds=0
 
-window=Tk()
-window.geometry('250x100')
-window.title('stopwatch')
-l=Label(window,text="00:00:00",font=('Arial bold',20))
-l.pack()
-btn1=Button(window,text='START',height=2,width=7,command=start)
-btn1.pack(side=LEFT)
-btn2=Button(window,text='STOP',height=2,width=7,command=stop)
-btn2.pack(side=LEFT)
-btn3=Button(window,text='RESET',height=2,width=7,command=reset)
-btn3.pack(side=LEFT)
-window.mainloop()
+def main():
+	global l
+	window=Tk()
+	window.geometry('250x100')
+	window.title('stopwatch')
+	l=Label(window,text="00:00:00",font=('Arial bold',20))
+	l.pack()
+	btn1=Button(window,text='START',height=2,width=7,command=start)
+	btn1.pack(side=LEFT)
+	btn2=Button(window,text='STOP',height=2,width=7,command=stop)
+	btn2.pack(side=LEFT)
+	btn3=Button(window,text='RESET',height=2,width=7,command=reset)
+	btn3.pack(side=LEFT)
+	window.mainloop()
+
+if __name__=="__main__":
+	main()
