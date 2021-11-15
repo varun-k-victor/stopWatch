@@ -6,6 +6,10 @@
 
 Stopwatch with three buttons-start,stop,reset.
 
+# Prerequisite
+
+-> tkinter
+
 # Note
 
 Click reset after stopping the timer.
