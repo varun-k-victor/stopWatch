@@ -13,7 +13,3 @@ Stopwatch with three buttons-start,stop,reset.
 # Note
 
 Click reset after stopping the timer.
-
-# Compatibility
-
-Works on both windows and linux.
